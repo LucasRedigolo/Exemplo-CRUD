@@ -7,7 +7,7 @@ namespace ExemploCrud {
     public class BancoDados {
         SqlConnection cn; // instancia a classe que contem metodos para conexão com o banco de dados.
         SqlCommand comandos; // classe de comandos do SQL
-        SqlDataReader rd;
+        SqlDataReader rd; // classe para leitura de arquivos (e o comando select)
 
         public bool Adicionar (Categoria cat) {
             bool retorno = false;
@@ -94,7 +94,6 @@ namespace ExemploCrud {
             }
             return retorno;
         }
-
         public List<Categoria> ListarCategorias (int ID) { //para retornar uma lista de todos os resultados da pesquisa
             List<Categoria> lista = new List<Categoria> ();
             try {
@@ -147,6 +146,44 @@ namespace ExemploCrud {
             }
             return lista;
         }
+        public bool AdicionarCliente (Cliente cliente) {
+            bool retorno = false;
+            try {
+                cn = new SqlConnection ();
+                cn.ConnectionString = @"Data Source = .\sqlexpress; initial catalog = Papelaria; user id= sa; Password = senai@123";
+                cn.Open (); // CN se torna nosso banco de dados de agora em diante
+                comandos = new SqlCommand ();
+                comandos.Connection = cn; // dizendo onde os comandos vão ser efetuados 
 
+                comandos.CommandType = CommandType.StoredProcedure; // o tipo do comando que vai ser executado 
+                comandos.CommandText = "sp_cadCliente"; // iniciando a procedure com esse nome, conforme informado na linha acima
+                SqlParameter p_nome = new SqlParameter ("@nome", SqlDbType.VarChar, 50); // p_nome vai ser o nome da variavel para o parametro @nome com o tipo VarChar(50)
+                p_nome.Value = cliente.nomeCliente;
+                comandos.Parameters.Add (p_nome);
+
+                SqlParameter p_email = new SqlParameter ("@email", SqlDbType.VarChar, 100);
+                p_email.Value = cliente.emailCliente;
+                comandos.Parameters.Add (p_email);
+
+                SqlParameter p_cpf = new SqlParameter ("@cpf", SqlDbType.VarChar, 20);
+                p_cpf.Value = cliente.cpf;
+                comandos.Parameters.Add (p_cpf);
+
+                int r = comandos.ExecuteNonQuery ();
+
+                if (r > 0)
+                    retorno = true;
+
+                comandos.Parameters.Clear ();
+
+            } catch (SqlException se) {
+                throw new Exception ("Erro ao tentar cadastrar." + se.Message); // mostrar erro para o usuario caso não der certo o try
+            } catch (Exception ex) {
+                throw new Exception ("Erro inesperado!!" + ex.Message);
+            } finally {
+                cn.Close ();
+            }
+            return retorno;
+        }
     }
 }

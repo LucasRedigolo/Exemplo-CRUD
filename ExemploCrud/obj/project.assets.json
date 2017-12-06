@@ -1099,11 +1099,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\43692939876\\Desktop\\Projetos\\Exemplo-CRUD\\ExemploCrud\\ExemploCrud.csproj",
+      "projectUniqueName": "C:\\Users\\43692939876\\Desktop\\Projetos\\Exemplo-CRUD\\ExemploCrud\\ExemploCrud.csproj",
       "projectName": "ExemploCrud",
-      "projectPath": "c:\\Users\\43692939876\\Desktop\\Projetos\\Exemplo-CRUD\\ExemploCrud\\ExemploCrud.csproj",
+      "projectPath": "C:\\Users\\43692939876\\Desktop\\Projetos\\Exemplo-CRUD\\ExemploCrud\\ExemploCrud.csproj",
       "packagesPath": "C:\\Users\\43692939876\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\43692939876\\Desktop\\Projetos\\Exemplo-CRUD\\ExemploCrud\\obj\\",
+      "outputPath": "C:\\Users\\43692939876\\Desktop\\Projetos\\Exemplo-CRUD\\ExemploCrud\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

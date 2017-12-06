@@ -1,0 +1,10 @@
+C:\Users\43692939876\Desktop\Projetos\Exemplo-CRUD\ExemploCrud\bin\Debug\netcoreapp2.0\ExemploCrud.deps.json
+C:\Users\43692939876\Desktop\Projetos\Exemplo-CRUD\ExemploCrud\bin\Debug\netcoreapp2.0\ExemploCrud.runtimeconfig.json
+C:\Users\43692939876\Desktop\Projetos\Exemplo-CRUD\ExemploCrud\bin\Debug\netcoreapp2.0\ExemploCrud.runtimeconfig.dev.json
+C:\Users\43692939876\Desktop\Projetos\Exemplo-CRUD\ExemploCrud\bin\Debug\netcoreapp2.0\ExemploCrud.dll
+C:\Users\43692939876\Desktop\Projetos\Exemplo-CRUD\ExemploCrud\bin\Debug\netcoreapp2.0\ExemploCrud.pdb
+C:\Users\43692939876\Desktop\Projetos\Exemplo-CRUD\ExemploCrud\obj\Debug\netcoreapp2.0\ExemploCrud.csproj.CoreCompileInputs.cache
+C:\Users\43692939876\Desktop\Projetos\Exemplo-CRUD\ExemploCrud\obj\Debug\netcoreapp2.0\ExemploCrud.AssemblyInfoInputs.cache
+C:\Users\43692939876\Desktop\Projetos\Exemplo-CRUD\ExemploCrud\obj\Debug\netcoreapp2.0\ExemploCrud.AssemblyInfo.cs
+C:\Users\43692939876\Desktop\Projetos\Exemplo-CRUD\ExemploCrud\obj\Debug\netcoreapp2.0\ExemploCrud.dll
+C:\Users\43692939876\Desktop\Projetos\Exemplo-CRUD\ExemploCrud\obj\Debug\netcoreapp2.0\ExemploCrud.pdb
